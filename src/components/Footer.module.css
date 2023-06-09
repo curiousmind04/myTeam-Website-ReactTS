@@ -1,0 +1,132 @@
+.footer {
+  background-color: var(--dark-green);
+  padding: 4.125rem 1.5rem 4rem 1.5rem;
+}
+
+.container {
+  text-align: center;
+}
+
+.container span {
+  display: block;
+  color: var(--white);
+  opacity: 0.6;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+}
+
+.logo {
+  width: 6rem;
+  margin-bottom: 1.5rem;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.links a {
+  color: var(--white);
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+}
+
+.info {
+  margin-bottom: 2.5rem;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.socials img {
+  display: block;
+}
+
+@media (hover: hover) {
+  .links a:hover {
+    color: var(--light-coral);
+  }
+  .socials a:hover {
+    filter: brightness(0) saturate(100%) invert(81%) sepia(33%) saturate(4591%)
+      hue-rotate(310deg) brightness(104%) contrast(92%);
+  }
+}
+
+@media (min-width: 48rem) {
+  .footer {
+    padding: 3.5rem 2.5rem;
+  }
+  .first {
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+  }
+  .first > :first-child {
+    height: 6.375rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .first > :last-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .logo {
+    margin-bottom: 0;
+  }
+  .links {
+    margin-bottom: 0;
+  }
+  .info {
+    margin-bottom: 0;
+  }
+  .second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media (min-width: 70rem) {
+  .footer {
+    padding: 3rem 10.3125rem;
+  }
+  .container {
+    max-width: 69.375rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-inline: auto;
+  }
+  .logo {
+    width: 10rem;
+  }
+  .first {
+    margin-bottom: 0;
+  }
+  .first > :first-child {
+    height: 6.25rem;
+  }
+  .first > :last-child {
+    align-items: flex-start;
+    margin-left: 7.8125rem;
+  }
+  .second {
+    height: 6.25rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
