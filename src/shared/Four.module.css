@@ -1,0 +1,38 @@
+.container {
+  background-color: var(--light-coral);
+  background-image: url("/assets/bg-pattern-home-6-about-5.svg");
+  background-repeat: no-repeat;
+  background-position: bottom -1.4rem left;
+  padding: 83px 1.5rem;
+}
+
+.container h2 {
+  color: #012f34;
+  width: 240px;
+  font-size: 2rem;
+  line-height: 2rem;
+  margin-bottom: 1.5rem;
+  margin-inline: auto;
+  text-align: center;
+}
+
+.container a {
+  color: #012f34;
+  width: 153px;
+  height: 3rem;
+  font-size: 18px;
+  line-height: 28px;
+  border: 2px solid #012f34;
+  border-radius: 24px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (hover: hover) {
+  .container a:hover {
+    background-color: #012f34;
+    color: var(--white);
+  }
+}
