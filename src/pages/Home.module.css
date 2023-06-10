@@ -3,16 +3,15 @@
   background-image: url("/assets/bg-pattern-home-2.svg");
   background-repeat: no-repeat;
   background-position: bottom;
-  /* background-size: calc(100% - 1rem); */
   text-align: center;
-  padding: 2rem 1.5rem 197px 1.5rem;
+  padding: 2rem 1.5rem 12.3125rem 1.5rem;
 }
 
 .one h2 {
   color: var(--white);
   font-size: 2.5rem;
   line-height: 2.5rem;
-  margin-bottom: 18px;
+  margin-bottom: 1.125rem;
 }
 
 .one h2 span {
@@ -21,9 +20,9 @@
 
 .one p {
   color: var(--white);
-  max-width: 457px;
-  font-size: 15px;
-  line-height: 28px;
+  max-width: 28.5625rem;
+  font-size: 0.9375rem;
+  line-height: 1.75rem;
   margin-inline: auto;
 }
 
@@ -32,28 +31,28 @@
 }
 
 .two {
-  background-color: #012f34;
+  background-color: var(--sacramento-state-green);
   background-image: url("/assets/bg-pattern-home-3.svg");
   background-repeat: no-repeat;
-  background-position: top right -100px;
-  padding: 64px 24px;
+  background-position: top right -6.25rem;
+  padding: 4rem 1.5rem;
 }
 
 .two > :first-child {
-  max-width: 500px;
+  max-width: 31.25rem;
   margin-inline: auto;
 }
 
 .line {
   background-color: var(--light-coral);
-  width: 50px;
-  height: 4px;
+  width: 3.125rem;
+  height: 0.25rem;
   margin-bottom: 2rem;
 }
 
 .two h2 {
   color: var(--white);
-  width: 240px;
+  width: 15rem;
   font-size: 2rem;
   line-height: 2rem;
   margin-bottom: 3.5rem;
@@ -78,33 +77,34 @@
 
 .benefit h3 {
   color: var(--light-coral);
-  font-size: 18px;
-  line-height: 28px;
-  margin-bottom: 8px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  margin-bottom: 0.5rem;
 }
 
 .benefit p {
   color: var(--white);
   opacity: 0.8;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
 }
 
 .three {
-  background-color: #004047;
+  background-color: var(--deep-jungle-green);
   background: url("assets/bg-pattern-home-4-about-3.svg") no-repeat top left,
-    url("assets/bg-pattern-home-5.svg") no-repeat bottom right, #004047;
-  padding: 140px 1.5rem 164px 1.5rem;
+    url("assets/bg-pattern-home-5.svg") no-repeat bottom right,
+    var(--deep-jungle-green);
+  padding: 8.75rem 1.5rem 10.25rem 1.5rem;
 }
 
 .three > :first-child {
-  max-width: 573px;
+  max-width: 35.8125rem;
   margin-inline: auto;
 }
 
 .three h2 {
   color: var(--white);
-  max-width: 500px;
+  max-width: 31.25rem;
   margin-inline: auto;
   font-size: 2rem;
   line-height: 2rem;
@@ -117,7 +117,7 @@
 }
 
 .quote {
-  padding-top: 36px;
+  padding-top: 2.25rem;
   text-align: center;
   position: relative;
   margin-bottom: 3rem;
@@ -135,30 +135,30 @@
 
 .quote p {
   color: var(--white);
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
   margin-bottom: 1rem;
   position: relative;
 }
 
 .quote h3 {
-  color: #79c8c7;
-  font-size: 18px;
-  line-height: 28px;
+  color: var(--rapture-blue);
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   margin-bottom: 2px;
 }
 
 .quote span {
   color: var(--white);
-  font-size: 13px;
+  font-size: 0.8125rem;
   font-style: italic;
-  line-height: 18px;
+  line-height: 1.125rem;
 }
 
 .avatar {
-  width: 62px;
-  height: 62px;
-  border: 2px solid #c4fffe;
+  width: 3.875rem;
+  height: 3.875rem;
+  border: 2px solid hsl(179, 100%, 88%);
   border-radius: 50%;
   margin-top: 1rem;
   margin-inline: auto;
@@ -172,10 +172,10 @@
 
 @media (max-width: 23rem) {
   .one {
-    background-size: 230px;
+    background-size: 14.375rem;
   }
   .two {
-    background-position: top right -150px;
+    background-position: top right -9.375rem;
   }
 }
 
@@ -193,23 +193,23 @@
 
 @media (min-width: 48rem) {
   .one {
-    padding: 3rem 1.5rem 256px 1.5rem;
+    padding: 3rem 1.5rem 16rem 1.5rem;
   }
   .one h2 {
-    font-size: 64px;
-    line-height: 56px;
+    font-size: 4rem;
+    line-height: 3.5rem;
     margin-bottom: 1.5rem;
   }
   .two {
-    padding: 100px 98px 100px 97px;
+    padding: 6.25rem 6.125rem 6.25rem 6.0625rem;
   }
   .two > :first-child {
     max-width: 100%;
     margin-inline: 0;
   }
   .two h2 {
-    width: 445px;
-    margin-bottom: 64px;
+    width: 27.8125rem;
+    margin-bottom: 4rem;
   }
   .benefit {
     text-align: left;
@@ -217,7 +217,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 23px;
+    gap: 1.4375rem;
   }
   .benefit img {
     margin-bottom: 0;
@@ -226,7 +226,7 @@
     margin-bottom: 1rem;
   }
   .three {
-    padding: 100px 98px 100px 97px;
+    padding: 6.25rem 6.125rem 6.25rem 6.0625rem;
   }
   .three h2 span {
     display: block;
@@ -236,7 +236,7 @@
 @media (min-width: 75rem) {
   .one {
     background-position: bottom right 10rem;
-    padding: 3.5rem 165px 250px 165px;
+    padding: 3.5rem 10.3125rem 15.625rem 10.3125rem;
     position: relative;
   }
   .one > :first-child {
@@ -244,25 +244,25 @@
     justify-content: space-between;
     align-items: flex-end;
     gap: 3rem;
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin-inline: auto;
   }
   .pattern1 {
     display: block;
     position: absolute;
-    left: -100px;
+    left: -6.25rem;
     top: 3.5rem;
   }
   .one h2 {
-    width: 535px;
-    font-size: 100px;
-    line-height: 100px;
+    width: 33.4375rem;
+    font-size: 6.25rem;
+    line-height: 6.25rem;
     margin-bottom: 0;
     text-align: left;
     flex-shrink: 0;
   }
   .right {
-    height: 195px;
+    height: 12.1875rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -270,23 +270,23 @@
     padding-bottom: 0.25rem;
   }
   .desktopLine {
-    background-color: #79c8c7;
-    width: 54px;
-    height: 4px;
+    background-color: var(--rapture-blue);
+    width: 3.375rem;
+    height: 0.25rem;
   }
   .one p {
     color: var(--white);
-    max-width: 445px;
-    font-size: 18px;
+    max-width: 27.8125rem;
+    font-size: 1.125rem;
     margin-inline: 0;
     text-align: left;
   }
   .two {
-    background-position: bottom right -100px;
-    padding: 140px 165px 140px 165px;
+    background-position: bottom right -6.25rem;
+    padding: 8.75rem 10.3125rem 8.75rem 10.3125rem;
   }
   .two > :first-child {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin-inline: auto;
     display: flex;
     justify-content: space-between;
@@ -298,27 +298,27 @@
   }
   .line {
     position: absolute;
-    top: -54px;
+    top: -3.375rem;
     left: 0;
   }
   .two h2 {
-    font-size: 48px;
-    line-height: 48px;
+    font-size: 3rem;
+    line-height: 3rem;
     margin-bottom: 0;
     flex-shrink: 0;
   }
   .benefit {
-    max-width: 540px;
+    max-width: 33.75rem;
   }
   .three {
-    padding: 140px 165px 140px 165px;
+    padding: 8.75rem 10.3125rem 10.3125rem 8.75rem;
   }
   .three > :first-child {
-    max-width: 1110px;
+    max-width: 69.375rem;
     margin-inline: auto;
   }
   .three h2 {
-    max-width: 932px;
+    max-width: 58.25rem;
     font-size: 3rem;
     line-height: 3rem;
     margin-bottom: 3.5rem;
@@ -329,7 +329,7 @@
   .quotes {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    column-gap: 30px;
+    column-gap: 1.875rem;
   }
   .quote {
     margin-bottom: 0;
