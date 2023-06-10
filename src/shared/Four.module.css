@@ -36,3 +36,46 @@
     color: var(--white);
   }
 }
+
+@media (max-width: 20rem) {
+  .container {
+    background-position: bottom -2.1rem left -2rem;
+  }
+  .container h2 {
+    font-size: 1.5rem;
+    line-height: 1.5rem;
+    width: 100%;
+  }
+}
+
+@media (min-width: 48rem) {
+  .container {
+    padding: 76px 98px 76px 97px;
+  }
+  .container > :first-child {
+    max-width: 917px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-inline: auto;
+  }
+  .container h2 {
+    width: 336px;
+    margin-bottom: 0;
+    margin-inline: 0;
+  }
+  .container a {
+    margin-inline: 0;
+  }
+}
+
+@media (min-width: 75rem) {
+  .container {
+    padding: 76px 165px 76px 165px;
+  }
+  .container h2 {
+    width: fit-content;
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+}

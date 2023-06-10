@@ -64,6 +64,10 @@
   .footer {
     padding: 3.5rem 2.5rem;
   }
+  .container {
+    max-width: 69.375rem;
+    margin-inline: auto;
+  }
   .first {
     height: fit-content;
     display: flex;
@@ -99,16 +103,14 @@
   }
 }
 
-@media (min-width: 70rem) {
+@media (min-width: 75rem) {
   .footer {
     padding: 3rem 10.3125rem;
   }
   .container {
-    max-width: 69.375rem;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-inline: auto;
   }
   .logo {
     width: 10rem;

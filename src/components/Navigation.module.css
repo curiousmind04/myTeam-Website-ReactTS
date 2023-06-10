@@ -140,7 +140,7 @@
   }
 }
 
-@media (min-width: 70rem) {
+@media (min-width: 75rem) {
   .header {
     padding: 4.5625rem 10.3125rem;
   }
