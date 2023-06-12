@@ -27,9 +27,9 @@
 }
 
 .two {
-  background: url("assets/bg-pattern-about-2-contact-1.svg") no-repeat top -6.25rem
+  background: url("/assets/bg-pattern-about-2-contact-1.svg") no-repeat top -6.25rem
       left -6.25rem,
-    url("assets/bg-pattern-home-4-about-3.svg") no-repeat bottom right,
+    url("/assets/bg-pattern-home-4-about-3.svg") no-repeat bottom right,
     var(--deep-jungle-green);
   padding: 5.5rem 1.5rem 7.25rem 1.5rem;
   text-align: center;
@@ -131,7 +131,7 @@
 
 .three {
   background-color: var(--sacramento-state-green);
-  background-image: url("assets/bg-pattern-about-4.svg");
+  background-image: url("/assets/bg-pattern-about-4.svg");
   background-repeat: no-repeat;
   background-position: top -6.25rem left -6.25rem;
   padding: 5.5rem 1.5rem;
@@ -203,9 +203,9 @@
     margin-bottom: 1.5rem;
   }
   .two {
-    background: url("assets/bg-pattern-about-2-contact-1.svg") no-repeat top 0
+    background: url("/assets/bg-pattern-about-2-contact-1.svg") no-repeat top 0
         left -6.25rem,
-      url("assets/bg-pattern-home-4-about-3.svg") no-repeat bottom right,
+      url("/assets/bg-pattern-home-4-about-3.svg") no-repeat bottom right,
       var(--deep-jungle-green);
     padding: 6.25rem 6.125rem 8rem 6.0625rem;
   }
