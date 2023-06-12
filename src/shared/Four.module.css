@@ -71,6 +71,7 @@
 
 @media (min-width: 75rem) {
   .container {
+    background-position: bottom 0 left;
     padding: 4.75rem 10.3125rem 4.75rem 10.3125rem;
   }
   .container h2 {

@@ -90,7 +90,7 @@
 }
 
 .three {
-  background-color: var(--deep-jungle-green);
+  /* background-color: var(--deep-jungle-green); */
   background: url("assets/bg-pattern-home-4-about-3.svg") no-repeat top left,
     url("assets/bg-pattern-home-5.svg") no-repeat bottom right,
     var(--deep-jungle-green);
@@ -283,7 +283,7 @@
   }
   .two {
     background-position: bottom right -6.25rem;
-    padding: 8.75rem 10.3125rem 8.75rem 10.3125rem;
+    padding: 12.375rem 10.3125rem 8.75rem 10.3125rem;
   }
   .two > :first-child {
     max-width: 69.375rem;
