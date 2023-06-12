@@ -1,15 +1,16 @@
 .container {
-  background-color: #014e56;
+  background-color: var(--midnight-green);
   background-image: url("/assets/bg-pattern-contact-2.svg");
   background-repeat: no-repeat;
   background-position: bottom -7rem right -6.25rem;
-  padding: 2rem 1.5rem 88px 1.5rem;
+  padding: 2rem 1.5rem 5.5rem 1.5rem;
   text-align: center;
 }
 
-/* .left {
-  margin-bottom: 10rem;
-} */
+.left {
+  max-width: 32.1875rem;
+  margin-inline: auto;
+}
 
 .left h2 {
   color: var(--white);
@@ -39,15 +40,15 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  gap: 23px;
+  gap: 1.4375rem;
   margin-bottom: 1.5rem;
 }
 
 .topic p {
   color: var(--white);
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 700;
-  line-height: 28px;
+  line-height: 1.75rem;
 }
 
 .topics > :last-child {
@@ -55,17 +56,20 @@
 }
 
 .form {
+  max-width: 33.75rem;
+  margin-inline: auto;
   text-align: left;
 }
 
-.form input {
-  background-color: #014e56;
+.form input,
+.form .error {
+  background-color: var(--midnight-green);
   color: var(--white);
   width: 100%;
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
   padding-bottom: 1rem;
-  padding-left: 14px;
+  padding-left: 0.875rem;
   padding-right: 1rem;
   border: none;
   border-bottom: 1px solid var(--white);
@@ -74,19 +78,30 @@
   margin-bottom: 1.5rem;
 }
 
+.form .error {
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--light-coral) !important;
+}
+
 .form input::placeholder {
   color: var(--white);
   opacity: 0.6;
 }
 
-.form textarea {
-  background-color: #014e56;
+.form .error::placeholder {
+  color: var(--light-coral);
+  opacity: 0.6;
+}
+
+.form textarea,
+.form .messageError {
+  background-color: var(--midnight-green);
   color: var(--white);
   width: 100%;
   font: inherit;
-  font-size: 15px;
-  line-height: 25px;
-  padding-left: 14px;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+  padding-left: 0.875rem;
   padding-right: 1rem;
   resize: none;
   border: none;
@@ -98,6 +113,16 @@
   cursor: pointer;
 }
 
+.form .messageError {
+  margin-bottom: 0.5rem;
+  border-bottom: 1px solid var(--light-coral) !important;
+}
+
+.form .messageError::placeholder {
+  color: var(--light-coral);
+  opacity: 0.6;
+}
+
 .form textarea::placeholder {
   color: var(--white);
   opacity: 0.6;
@@ -105,7 +130,7 @@
 
 .form input:focus,
 .form textarea:focus {
-  border-bottom: 1px solid #79c8c7;
+  border-bottom: 1px solid var(--rapture-blue);
 }
 
 /* this code prevents the background color 
@@ -117,18 +142,29 @@ from changing when using Chrome autocomplete */
 .form input:-webkit-autofill:active {
   /* -webkit-transition-delay: 9999s; */
   /* -webkit-transition: background-color 9999s ease-out; */
-  -webkit-box-shadow: 0 0 0 30px #014e56 inset !important;
+  -webkit-box-shadow: 0 0 0 30px var(--midnight-green) inset !important;
   -webkit-text-fill-color: var(--white) !important;
   /* -webkit-transition: color 9999s ease-out, background-color 9999s ease-out; */
 }
 
+.form span {
+  display: block;
+  color: var(--light-coral);
+  font-size: 0.625rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 0.8125rem;
+  padding-left: 0.875rem;
+  margin-bottom: 1.0625rem;
+}
+
 .form button {
   background-color: var(--white);
-  color: #004047;
-  width: 123px;
+  color: var(--deep-jungle-green);
+  width: 7.6875rem;
   height: 3rem;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
   border: 2px solid var(--white);
   border-radius: 1.5rem;
 }
@@ -136,10 +172,80 @@ from changing when using Chrome autocomplete */
 @media (hover: hover) {
   .form input:hover,
   .form textarea:hover {
-    border-bottom: 1px solid #79c8c7;
+    border-bottom: 1px solid var(--rapture-blue);
   }
   .form button:hover {
-    background-color: #004047;
+    background-color: var(--deep-jungle-green);
     color: var(--white);
+  }
+}
+
+@media (max-width: 20rem) {
+  .container {
+    background-position: bottom -7rem right -7rem;
+    padding: 2rem 1rem 5.5rem 1rem;
+  }
+  .left > span {
+    font-size: 1.5rem;
+  }
+  .topic {
+    gap: 1rem;
+  }
+  .topic p {
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+  }
+}
+
+@media (min-width: 48rem) {
+  .container {
+    background: url("/assets/bg-pattern-about-2-contact-1.svg") no-repeat top
+        2.5rem left -6.25rem,
+      url("/assets/bg-pattern-contact-2.svg") no-repeat bottom 0 right -6.25rem,
+      var(--midnight-green);
+    padding: 3rem 7.0625rem 7rem 7.1875rem;
+  }
+  .left h2 {
+    font-size: 4rem;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .topics {
+    margin-top: 1.5rem;
+    margin-bottom: 4rem;
+  }
+  .topic {
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 75rem) {
+  .container {
+    background: url("/assets/bg-pattern-about-2-contact-1.svg") no-repeat top
+        3.5rem left -6.25rem,
+      url("/assets/bg-pattern-contact-2.svg") no-repeat bottom 0 right -6.25rem,
+      var(--midnight-green);
+    padding: 2.9375rem 10.3125rem 7.5rem 10.3125rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 1.875rem;
+  }
+  .left {
+    width: 33.75rem;
+    max-width: 33.75rem;
+    flex-shrink: 0;
+    text-align: left;
+  }
+  .left h2 {
+    line-height: 6.25rem;
+    margin-bottom: 1rem;
+  }
+  .topics {
+    margin-top: 2rem;
+    margin-bottom: 0;
+  }
+  .form {
+    margin-bottom: 0.8rem;
   }
 }

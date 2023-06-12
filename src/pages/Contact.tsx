@@ -14,8 +14,8 @@ const ContactPage = () => {
     e.preventDefault();
     const name = nameRef.current?.value;
     const email = emailRef.current?.value;
-    // const company = companyRef.current?.value;
-    // const title = titleRef.current?.value;
+    const company = companyRef.current?.value;
+    const title = titleRef.current?.value;
     const message = messageRef.current?.value;
 
     const validInputs = [];
@@ -61,6 +61,10 @@ const ContactPage = () => {
             : prevState
         );
       }
+    } else {
+      setInvalidInputs((prevState) =>
+        prevState.filter((item) => item !== "invalid email")
+      );
     }
 
     // message validations
@@ -75,14 +79,37 @@ const ContactPage = () => {
       validInputs.push("message");
     }
 
-    console.log(validInputs);
+    // console.log(validInputs);
 
-    if (validInputs.includes("name" && "email" && "message")) {
+    if (
+      validInputs.includes("name") &&
+      validInputs.includes("email") &&
+      validInputs.includes("message")
+    ) {
       alert("message sent");
+    } else {
+      return;
+    }
+
+    // reset inputs if message is sent
+    if (name) {
+      nameRef.current.value = "";
+    }
+    if (email) {
+      emailRef.current.value = "";
+    }
+    if (company) {
+      companyRef.current.value = "";
+    }
+    if (title) {
+      titleRef.current.value = "";
+    }
+    if (message) {
+      messageRef.current.value = "";
     }
   };
 
-  console.log(invalidInputs);
+  // console.log(invalidInputs);
 
   return (
     <>
@@ -116,7 +143,16 @@ const ContactPage = () => {
             id="name"
             placeholder="Name"
             ref={nameRef}
+            className={invalidInputs.includes("name") ? classes.error : ""}
+            onChange={() =>
+              setInvalidInputs((prevState) =>
+                prevState.filter((item) => item !== "name")
+              )
+            }
           />
+          {invalidInputs.includes("name") && (
+            <span>This field is required</span>
+          )}
           <label htmlFor="email" className="sr-only">
             Email
           </label>
@@ -126,7 +162,26 @@ const ContactPage = () => {
             id="email"
             placeholder="Email Address"
             ref={emailRef}
+            className={
+              invalidInputs.includes("email") ||
+              invalidInputs.includes("invalid email")
+                ? classes.error
+                : ""
+            }
+            onChange={() =>
+              setInvalidInputs((prevState) =>
+                prevState.filter(
+                  (item) => item !== "email" && item !== "invalid email"
+                )
+              )
+            }
           />
+          {invalidInputs.includes("email") && (
+            <span>This field is required</span>
+          )}
+          {invalidInputs.includes("invalid email") && (
+            <span>Please use a valid email address</span>
+          )}
           <label htmlFor="company-name" className="sr-only">
             Company Name
           </label>
@@ -156,7 +211,16 @@ const ContactPage = () => {
             placeholder="Message"
             rows={3}
             ref={messageRef}
+            className={
+              invalidInputs.includes("message") ? classes.messageError : ""
+            }
+            onChange={() =>
+              setInvalidInputs((prevState) =>
+                prevState.filter((item) => item !== "message")
+              )
+            }
           ></textarea>
+          {invalidInputs.includes("message") && <span>Min. 20 Chars</span>}
           <button type="submit">submit</button>
         </form>
       </section>

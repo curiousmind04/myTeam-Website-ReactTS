@@ -207,7 +207,7 @@
         left -6.25rem,
       url("assets/bg-pattern-home-4-about-3.svg") no-repeat bottom right,
       var(--deep-jungle-green);
-    padding: 6.25rem 6.125rem 11.75rem 6.0625rem;
+    padding: 6.25rem 6.125rem 8rem 6.0625rem;
   }
   .grid {
     width: 100%;
