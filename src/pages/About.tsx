@@ -59,7 +59,7 @@ const AboutPage = () => {
     );
   };
 
-  console.log(openedInfo);
+  // console.log(openedInfo);
   return (
     <>
       <section className={classes.one}>

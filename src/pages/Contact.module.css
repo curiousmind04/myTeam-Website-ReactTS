@@ -1,0 +1,145 @@
+.container {
+  background-color: #014e56;
+  background-image: url("/assets/bg-pattern-contact-2.svg");
+  background-repeat: no-repeat;
+  background-position: bottom -7rem right -6.25rem;
+  padding: 2rem 1.5rem 88px 1.5rem;
+  text-align: center;
+}
+
+/* .left {
+  margin-bottom: 10rem;
+} */
+
+.left h2 {
+  color: var(--white);
+  font-size: 2.5rem;
+  line-height: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.left > span {
+  color: var(--light-coral);
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+}
+
+.topics {
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.topics > :first-child img {
+  margin-inline: 3.5px;
+}
+
+.topic {
+  text-align: left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 23px;
+  margin-bottom: 1.5rem;
+}
+
+.topic p {
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+.topics > :last-child {
+  margin-bottom: 0;
+}
+
+.form {
+  text-align: left;
+}
+
+.form input {
+  background-color: #014e56;
+  color: var(--white);
+  width: 100%;
+  font-size: 15px;
+  line-height: 25px;
+  padding-bottom: 1rem;
+  padding-left: 14px;
+  padding-right: 1rem;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  border-radius: 0;
+  outline: none;
+  margin-bottom: 1.5rem;
+}
+
+.form input::placeholder {
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.form textarea {
+  background-color: #014e56;
+  color: var(--white);
+  width: 100%;
+  font: inherit;
+  font-size: 15px;
+  line-height: 25px;
+  padding-left: 14px;
+  padding-right: 1rem;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid var(--white);
+  border-radius: 0;
+  outline: none;
+  margin-bottom: 1.5rem;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+.form textarea::placeholder {
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.form input:focus,
+.form textarea:focus {
+  border-bottom: 1px solid #79c8c7;
+}
+
+/* this code prevents the background color 
+from changing when using Chrome autocomplete */
+
+.form input:-webkit-autofill,
+.form input:-webkit-autofill:hover,
+.form input:-webkit-autofill:focus,
+.form input:-webkit-autofill:active {
+  /* -webkit-transition-delay: 9999s; */
+  /* -webkit-transition: background-color 9999s ease-out; */
+  -webkit-box-shadow: 0 0 0 30px #014e56 inset !important;
+  -webkit-text-fill-color: var(--white) !important;
+  /* -webkit-transition: color 9999s ease-out, background-color 9999s ease-out; */
+}
+
+.form button {
+  background-color: var(--white);
+  color: #004047;
+  width: 123px;
+  height: 3rem;
+  font-size: 18px;
+  line-height: 28px;
+  border: 2px solid var(--white);
+  border-radius: 1.5rem;
+}
+
+@media (hover: hover) {
+  .form input:hover,
+  .form textarea:hover {
+    border-bottom: 1px solid #79c8c7;
+  }
+  .form button:hover {
+    background-color: #004047;
+    color: var(--white);
+  }
+}
